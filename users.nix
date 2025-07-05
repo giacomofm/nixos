@@ -1,7 +1,7 @@
 # per la password:
 # passwd giacomo
 
-{
+{ pkgs, ... }: {
   users.users.giacomo = {
     uid = 1000;
     isNormalUser = true;

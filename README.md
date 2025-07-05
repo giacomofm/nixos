@@ -1,9 +1,7 @@
 # NixOS
 
-[nix.dev](https://nix.dev/)
-
-[NixOS](https://nixos.org/manual/nixos/stable/)
-
+[nix.dev](https://nix.dev/)  
+[NixOS](https://nixos.org/manual/nixos/stable/)  
 [Appendix A. Configuration Options](https://nixos.org/manual/nixos/stable/options)
 
 ## Installazione
@@ -29,8 +27,8 @@ mkdir -p /mnt/boot
 mount -o umask=077 /dev/disk/by-label/boot /mnt/boot
 ```
 
-`nixos-generate-config --root /mnt` per creare la base
-edita `/mnt/etc/nixos/configuration.nix` (•̀ᴗ•́)و
+`nixos-generate-config --root /mnt` per creare la base  
+edita `/mnt/etc/nixos/configuration.nix` (•̀ᴗ•́)و  
 `git clone https://github.com/giacomofm/nix.git`
 
 `nixos-install`

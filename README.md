@@ -1,15 +1,18 @@
 # NixOS
 
 [nix.dev](https://nix.dev/)
+
 [NixOS](https://nixos.org/manual/nixos/stable/)
+
 [Appendix A. Configuration Options](https://nixos.org/manual/nixos/stable/options)
 
 ## Installazione
 
 ### Partitioning
 ```
+lsblk # Per controllare i dischi
 parted /dev/sda -- mklabel gpt
-parted /dev/sda -- mkpart root ext4 512MB
+parted /dev/sda -- mkpart root ext4 512MB 100%
 parted /dev/sda -- mkpart ESP fat32 1MB 512MB
 parted /dev/sda -- set 2 esp on
 ```
@@ -28,6 +31,7 @@ mount -o umask=077 /dev/disk/by-label/boot /mnt/boot
 
 `nixos-generate-config --root /mnt` per creare la base
 edita `/mnt/etc/nixos/configuration.nix` (•̀ᴗ•́)و
+`git clone https://github.com/giacomofm/nix.git`
 
 `nixos-install`
 

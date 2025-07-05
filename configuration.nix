@@ -33,11 +33,11 @@
     ];
   };
   environment.systemPackages = with pkgs; [
+    ghostty
     git
     vlc
     sublime4
     nautilus
-    gnome-shell
     gnome-system-monitor
   ];
 }

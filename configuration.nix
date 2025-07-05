@@ -7,6 +7,7 @@
   ];
   system.stateVersion = "25.05";
   # Boot
+  boot.loader.efi.canTouchEfiVariables = true;
   boot.loader.systemd-boot.enable = true;
   boot.loader.systemd-boot.editor = false;
   system.autoUpgrade.channel = "https://channels.nixos.org/nixos-25.05";

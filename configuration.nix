@@ -26,8 +26,13 @@
     alsa.support32Bit = true;
   };
   # App
-  nixpkgs.config = { allowUnfree = true; };
   programs.firefox.enable = true;
+  nixpkgs.config = { 
+    allowUnfree = true;
+    permittedInsecurePackages = [
+      "openssl-1.1.1w"
+    ];
+  };
   environment.systemPackages = with pkgs; [
     git
     vlc

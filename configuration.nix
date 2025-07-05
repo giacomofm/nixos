@@ -15,7 +15,6 @@
   services.xserver.displayManager.gdm.enable = true;
   services.xserver.desktopManager.gnome.enable = true;
   services.gnome.core-apps.enable = false;
-  programs.sway.enable = true;
   # PipeWire
   services.pulseaudio.enable = false;
   security.rtkit.enable = true;
@@ -29,13 +28,16 @@
   programs.firefox.enable = true;
   nixpkgs.config = { 
     allowUnfree = true;
-    permittedInsecurePackages = [
-      "openssl-1.1.1w"
-    ];
+    # permittedInsecurePackages = [
+    #   "openssl-1.1.1w"
+    # ];
   };
   environment.systemPackages = with pkgs; [
     git
     vlc
     sublime4
+    nautilus
+    gnome-shell
+    gnome-system-monitor
   ];
 }

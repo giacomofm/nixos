@@ -15,6 +15,7 @@
   services.xserver.displayManager.gdm.enable = true;
   services.xserver.desktopManager.gnome.enable = true;
   services.gnome.core-apps.enable = false;
+  environment.gnome.excludePackages = [ pkgs.gnome-tour ];
   # PipeWire
   services.pulseaudio.enable = false;
   security.rtkit.enable = true;

@@ -41,5 +41,6 @@
     nautilus
     gnome-system-monitor
     input-remapper
+    hydrapaper
   ];
 }

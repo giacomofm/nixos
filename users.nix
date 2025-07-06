@@ -9,6 +9,8 @@
     extraGroups = [ "wheel" "networkmanager" ];
     packages = with pkgs; [
       jetbrains-toolbox
+      qbittorrent
+      spotify
     ];
   };
   programs.steam = {

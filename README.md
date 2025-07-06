@@ -46,3 +46,8 @@ Alla fine password per l'utente:
 [Upgrading NixOS](https://nixos.org/manual/nixos/stable/#sec-upgrading)
 
 `nixos-rebuild switch --upgrade`
+
+## Cleaning
+
+`nixos-rebuild list-generations`  
+`sudo nix-collect-garbage -d`

@@ -30,8 +30,8 @@ mount -o umask=077 /dev/disk/by-label/boot /mnt/boot
 ```
 
 `nixos-generate-config --root /mnt` per creare la base  
-edita `/mnt/etc/nixos/configuration.nix` (•̀ᴗ•́)و  
-`git clone https://github.com/giacomofm/nix.git`
+muovi `/mnt/etc/nixos/hardware-configuration.nix`  
+clona `git clone https://github.com/giacomofm/nixos.git` (•̀ᴗ•́)و
 
 `nixos-install`
 

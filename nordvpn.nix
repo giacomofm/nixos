@@ -1,3 +1,6 @@
+# NordVPN install from source:
+# https://github.com/NordSecurity/nordvpn-linux/issues/355#issuecomment-2486424885
+
 { config, pkgs, ... }: {
   systemd.sockets.nordvpnd = {
     description = "NordVPN Daemon Socket";
